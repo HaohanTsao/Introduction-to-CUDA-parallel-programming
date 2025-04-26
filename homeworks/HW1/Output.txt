@@ -1,0 +1,89 @@
+==== Block Size = 16 ====
+Using GPU with device ID = 0
+Set GPU with device ID = 0
+Matrix Addition: C(i,j) = 1/A(i,j) + 1/B(i,j)
+Matrix size: 6400 x 6400
+Using 16 threads per block dimension
+The grid dimensions are 400 x 400 blocks
+Input time for GPU: 46.641247 (ms)
+Processing time for GPU: 9.669984 (ms)
+GPU Gflops: 12.707364
+Output time for GPU: 48.724033 (ms)
+Total time for GPU: 105.035263 (ms)
+Processing time for CPU: 305.558929 (ms)
+CPU Gflops: 0.402148
+Speed up of GPU = 2.909108
+Check result:
+norm(h_C - h_D)=0.000000000000000e+00
+
+==== Block Size = 8 ====
+Using GPU with device ID = 0
+Set GPU with device ID = 0
+Matrix Addition: C(i,j) = 1/A(i,j) + 1/B(i,j)
+Matrix size: 6400 x 6400
+Using 8 threads per block dimension
+The grid dimensions are 800 x 800 blocks
+Input time for GPU: 47.913406 (ms)
+Processing time for GPU: 9.668928 (ms)
+GPU Gflops: 12.708751
+Output time for GPU: 49.155392 (ms)
+Total time for GPU: 106.737732 (ms)
+Processing time for CPU: 305.437714 (ms)
+CPU Gflops: 0.402308
+Speed up of GPU = 2.861572
+Check result:
+norm(h_C - h_D)=0.000000000000000e+00
+
+==== Block Size = 32 ====
+Using GPU with device ID = 0
+Set GPU with device ID = 0
+Matrix Addition: C(i,j) = 1/A(i,j) + 1/B(i,j)
+Matrix size: 6400 x 6400
+Using 32 threads per block dimension
+The grid dimensions are 200 x 200 blocks
+Input time for GPU: 46.639519 (ms)
+Processing time for GPU: 9.726944 (ms)
+GPU Gflops: 12.632950
+Output time for GPU: 48.770496 (ms)
+Total time for GPU: 105.136963 (ms)
+Processing time for CPU: 304.913208 (ms)
+CPU Gflops: 0.403000
+Speed up of GPU = 2.900152
+Check result:
+norm(h_C - h_D)=0.000000000000000e+00
+
+==== Block Size = 24 ====
+Using GPU with device ID = 0
+Set GPU with device ID = 0
+Matrix Addition: C(i,j) = 1/A(i,j) + 1/B(i,j)
+Matrix size: 6400 x 6400
+Using 24 threads per block dimension
+The grid dimensions are 267 x 267 blocks
+Input time for GPU: 46.631935 (ms)
+Processing time for GPU: 9.775680 (ms)
+GPU Gflops: 12.569970
+Output time for GPU: 49.138527 (ms)
+Total time for GPU: 105.546143 (ms)
+Processing time for CPU: 305.483704 (ms)
+CPU Gflops: 0.402247
+Speed up of GPU = 2.894314
+Check result:
+norm(h_C - h_D)=0.000000000000000e+00
+
+==== Block Size = 4 ====
+Using GPU with device ID = 0
+Set GPU with device ID = 0
+Matrix Addition: C(i,j) = 1/A(i,j) + 1/B(i,j)
+Matrix size: 6400 x 6400
+Using 4 threads per block dimension
+The grid dimensions are 1600 x 1600 blocks
+Input time for GPU: 47.822624 (ms)
+Processing time for GPU: 19.263231 (ms)
+GPU Gflops: 6.378992
+Output time for GPU: 49.524063 (ms)
+Total time for GPU: 116.609917 (ms)
+Processing time for CPU: 305.578400 (ms)
+CPU Gflops: 0.402123
+Speed up of GPU = 2.620518
+Check result:
+norm(h_C - h_D)=0.000000000000000e+00
