@@ -97,9 +97,9 @@ __global__ void SimpleKernel(float *src, float *dst) {
 
 ## 4. Multi-GPU程式設計模型
 
-### 4.1 CPU執行緒與GPU的映射
+### 4.1 CPU執行thread與GPU的映射
 
-最常見的模型是：**一個CPU執行緒專門負責一個GPU**
+最常見的模型是：**一個CPU執行thread專門負責一個GPU**
 
 ```
 Thread0 → GPU0
@@ -114,18 +114,18 @@ Thread(m-1) → GPU(m-1)
 #include <omp.h>
 
 int main() {
-    // 設定與GPU數量相同的執行緒數
+    // 設定與GPU數量相同的執行thread數
     omp_set_num_threads(N_GPU);
     
     #pragma omp parallel private(cpu_thread_id)
     {
-        // 獲取執行緒ID
+        // 獲取執行threadID
         cpu_thread_id = omp_get_thread_num();
         
         // 綁定到對應GPU
         cudaSetDevice(cpu_thread_id);
         
-        // 此執行緒只負責對應GPU的工作
+        // 此執行thread只負責對應GPU的工作
         // ...
     }
     // OpenMP並行區域結束
@@ -138,7 +138,7 @@ int main() {
 #include <omp.h>
 
 int main() {
-    // 設定執行緒數等於GPU數量
+    // 設定執行thread數等於GPU數量
     omp_set_num_threads(N_GPU);
     
     #pragma omp parallel private(cpu_thread_id)
